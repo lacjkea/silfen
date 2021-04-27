@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,34 +23,91 @@
   </head>
   <body>
     <main>
-      <section class="galley">
+      <div class="gallery">
         <img src="silfenproducts/kim.jpg" />
         <img src="silfenproducts/ulla-recycled.jpg" />
         <img src="silfenproducts/siri-recycled.jpg" />
         <img src="silfenproducts/saga-tote.jpg" />
         <img src="silfenproducts/ida-leather.jpg" />
         <img src="silfenproducts/ida-nylon.jpg" />
-      </section>
+      </div>
 
       <aside>
-        <h1>Title</h1>
-        <h2>Price</h2>
-        <p>Description</p>
+        <h1>TITLE</h1>
+        <h2>PRICE</h2>
+        <h2>COLOR</h2>
+        <div class="color_wrapper">
+          <div class="color_circle one"></div>
+          <div class="color_circle two"></div>
+          <div class="color_circle three"></div>
+        </div>
 
-        <button type="button">BUY NOW</button>
-        <button type="button">Add to bag</button>
+        <button type="button" id="buy_now">Buy Now</button>
+        <button type="button" id="add_to_cart">Add to Cart</button>
+
+        <p>Description</p>
       </aside>
 
       <section class="suggestions">
-        <h2>You might also like</h2>
+        <h3>You might also like</h3>
 
         <div class="slider">
-          <img src="silfenproducts/kim.jpg" />
-          <img src="silfenproducts/ulla-recycled.jpg" />
-          <img src="silfenproducts/siri-recycled.jpg" />
-          <img src="silfenproducts/saga-tote.jpg" />
-          <img src="silfenproducts/ida-leather.jpg" />
-          <img src="silfenproducts/ida-nylon.jpg" />
+          <article class="product_article">
+            <div class="img_wrapper">
+              <a href="productpage.html"
+                ><img
+                  class="productimage"
+                  src="silfenproducts/kim.jpg"
+                  alt="bag"
+              /></a>
+            </div>
+
+            <div class="info">
+              <h2>TITLE</h2>
+
+              <div class="price_wrapper">
+                <p class="price">1000 DKK</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="product_article">
+            <div class="img_wrapper">
+              <a href="product.html"
+                ><img
+                  class="productimage"
+                  src="silfenproducts/kim.jpg"
+                  alt="bag"
+              /></a>
+            </div>
+
+            <div class="info">
+              <h2>TITLE</h2>
+
+              <div class="price_wrapper">
+                <p class="price">1000 DKK</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="product_article">
+            <div class="img_wrapper">
+              <a href="product.html"
+                ><img
+                  class="productimage"
+                  src="silfenproducts/kim.jpg"
+                  alt="bag"
+              /></a>
+            </div>
+
+            <div class="info">
+              <h2>TITLE</h2>
+
+              <div class="price_wrapper">
+                <p class="price">1000 DKK</p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>

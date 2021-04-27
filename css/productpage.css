@@ -128,3 +128,131 @@ table {
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+
+main {
+  background-color: #f5f5f5;
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.gallery img {
+  max-width: 4000px;
+}
+
+div.gallery {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+aside {
+  margin-left: 70px;
+}
+
+aside h1 {
+  font-family: manrope;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+aside h2 {
+  font-family: manrope;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+
+div.color_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: -22px;
+  margin-bottom: 40px;
+}
+
+div.color_circle {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+div.one {
+  background-color: blue;
+  margin-right: 10px;
+}
+
+div.two {
+  background-color: green;
+  margin-right: 10px;
+}
+
+div.three {
+  background-color: brown;
+  margin-right: 10px;
+}
+
+aside p {
+  font-family: manrope;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+button {
+  margin-bottom: 40px;
+  border: 2px solid black;
+  padding: 15px;
+  width: 150px;
+  font-family: manrope;
+  font-weight: 450;
+  font-size: 15px;
+  margin-right: 20px;
+  letter-spacing: 1px;
+}
+
+button#buy_now {
+  background-color: black;
+  color: white;
+}
+
+section.suggestions {
+  padding-top: 130px;
+}
+
+section.suggestions h3 {
+  font-family: manrope;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.slider {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding-bottom: 150px;
+}
+
+.info h2 {
+  padding-top: 15px;
+  font-family: manrope;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price_wrapper p {
+  padding-top: 10px;
+  font-family: manrope;
+  letter-spacing: 1px;
+}
