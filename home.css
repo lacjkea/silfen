@@ -1,3 +1,89 @@
+/* indexpage  */
+
+.parentindex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.studioimg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.playimg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.silfenstudio {
+  grid-area: studio;
+  display: block;
+  position: relative;
+}
+
+.silfenplay {
+  grid-area: play;
+  display: block;
+  position: relative;
+}
+
+.silfenstudio {
+  max-width: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #9cc3df;
+}
+
+.overlayy {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #a7e4c4;
+}
+
+.silfenstudio:hover .overlay {
+  opacity: 1;
+}
+
+.silfenplay:hover .overlayy {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /* nav bar */
 
 .newsletter {
@@ -97,10 +183,11 @@ li a {
 
 nav ul ul {
   position: absolute;
-  top: 110px;
+  top: 90px;
+  padding: 1em;
   display: none;
   background-color: #b2d9ea;
-
+  z-index: 1;
   width: 800px;
 }
 .nav_links ul li:hover > ul {
