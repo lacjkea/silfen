@@ -50,11 +50,7 @@ function showProducts(products) {
 //           </article>
 //         </template>
 
-
-
-https://kea21-ed2b.restdb.io/rest/bags?q={"type" : {"$in" : ["bumbags"]}}
-https://mydb-fafc.restdb.io/rest/people?q={"name" : {"$in" : ["Joe", "Jane", "Donald"]}}
-
-
+// https://kea21-ed2b.restdb.io/rest/bags?q={"type" : {"$in" : ["bumbags"]}}
+// https://mydb-fafc.restdb.io/rest/people?q={"name" : {"$in" : ["Joe", "Jane", "Donald"]}}
 
 // new arrivals, bumbags, crossbody bags, wallets, mini bags, shoulder bags, tote bags, care

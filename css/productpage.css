@@ -288,29 +288,64 @@ main {
 }
 
 .gallery img {
-  width: 100%;
+  width: 150%;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+#bag_info {
+  margin-left: 300px;
+  margin-top: 20px;
 }
 
 h1 {
   font-family: manrope;
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 25px;
   letter-spacing: 1px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 h2 {
   font-family: manrope;
   letter-spacing: 1px;
   font-size: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 div.color_wrapper {
   display: flex;
   flex-direction: row;
   margin-top: -22px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
+}
+#bag_info h4 {
+  font-family: manrope;
+  letter-spacing: 1;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#bag_info p {
+  font-family: manrope;
+  letter-spacing: 1;
+  margin-bottom: 100px;
+}
+
+button#add_to_cart:hover {
+  background-color: black;
+  color: white;
+}
+
+button#buy_now:hover {
+  background-color: #f5f5f5;
+  color: black;
 }
 
 div.color_circle {
@@ -321,17 +356,17 @@ div.color_circle {
 }
 
 div.one {
-  background-color: blue;
+  background-color: black;
   margin-right: 10px;
 }
 
 div.two {
-  background-color: green;
+  background-color: #bce9b6;
   margin-right: 10px;
 }
 
 div.three {
-  background-color: brown;
+  background-color: #faebd7;
   margin-right: 10px;
 }
 
@@ -358,7 +393,7 @@ section.suggestions {
 
 section.suggestions h3 {
   font-family: manrope;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 30px;
   letter-spacing: 1px;
   padding-bottom: 20px;
@@ -375,15 +410,15 @@ section.suggestions h3 {
 }
 
 .info h2 {
-  padding-top: 15px;
+  padding-top: 20px;
   font-family: manrope;
   letter-spacing: 1px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .price_wrapper p {
-  padding-top: 10px;
+  margin-top: -80px;
   font-family: manrope;
   letter-spacing: 1px;
 }
@@ -487,10 +522,36 @@ section.suggestions h3 {
   .newsletterForm {
     margin-top: 4rem;
   }
+  .product {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  #bag_info {
+    margin-left: 20px;
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 720px) {
   .newsletterForm {
     margin-top: 4rem;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  #bag_info {
+    margin-left: 20px;
+    margin-top: 100px;
   }
 }

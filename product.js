@@ -24,7 +24,7 @@ function showSingleProduct(product) {
   //   const copy = template.cloneNode(true);
   document.querySelector(".gallery img").src = `${product.image}`;
   document.querySelector("h1").textContent = product.name;
-  document.querySelector("h2").textContent = product.price;
+  document.querySelector("h2").textContent = product.price + " DKK";
   document.querySelector("p").textContent = product.description;
   //   const parent = document.querySelector(".products");
   //   parent.appendChild(copy);

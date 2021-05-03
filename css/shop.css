@@ -292,7 +292,7 @@ section.products {
   margin-right: 70px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 50px;
+  gap: 100px;
   padding-bottom: 150px;
 }
 
@@ -300,13 +300,14 @@ section.products {
   padding-top: 15px;
   font-family: manrope;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .price_wrapper p {
-  padding-top: 10px;
+  padding-top: 15px;
   font-family: manrope;
+  font-size: 13px;
   letter-spacing: 1px;
 }
 
@@ -318,15 +319,15 @@ div.color_circle {
 }
 
 div.one {
-  background-color: blue;
+  background-color: #faebd7;
 }
 
 div.two {
-  background-color: green;
+  background-color: black;
 }
 
 div.three {
-  background-color: brown;
+  background-color: #bce9b6;
 }
 
 div.color_wrapper {
@@ -335,7 +336,7 @@ div.color_wrapper {
   flex-direction: row;
   justify-content: space-around;
   position: relative;
-  left: 280px;
+  left: 230px;
   margin-top: -38px;
 }
 
