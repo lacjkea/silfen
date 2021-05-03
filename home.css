@@ -16,6 +16,9 @@
   max-height: 100%;
 }
 
+
+
+
 .playimg {
   max-width: 100%;
   max-height: 100%;
@@ -111,6 +114,8 @@
   width: 1540px;
   background-color: #f3efad;
   overflow-x: hidden;
+  overflow: hidden;
+  
 }
 
 .newsletterr {
@@ -156,12 +161,22 @@ header {
   padding-top: 1.5em;
   padding-bottom: 1em;
   margin: 0 -0.5em 0 -0.5em;
-
+  position: fixed;
+  right: 0;
+  left: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 2;
 }
+
+.links {margin-top: -430px;}
 
 nav {
   display: flex;
+  z-index: 1;
+  overflow: hidden;
+  height: 500px;
+  width: 1000px;
 }
 
 .logo a {
@@ -203,15 +218,21 @@ li a {
 
 nav ul ul {
   position: absolute;
-  top: 90px;
+  
   padding: 1em;
   display: none;
   background-color: #b2d9ea;
   z-index: 1;
   width: 800px;
+ 
+
+  
+
 }
 .nav_links ul li:hover > ul {
-  display: table;
+  
+  display: block;
+
 }
 
 nav ul ul li {
@@ -253,11 +274,11 @@ nav ul li:hover > ul {
 
 .navimg {
   display: inline;
-  max-width: 10%;
+  max-width: 20%;
 }
 
 .navimgg {
-  max-width: 10%;
+  max-width: 20%;
   display: inline;
 }
 
@@ -285,7 +306,7 @@ nav ul li:hover > ul {
 }
 
 .parenthome {
-  padding-top: 2em;
+  padding-top: 10em;
   padding-left: 4em;
   display: inline-flex;
 }
@@ -324,7 +345,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0;
+  padding-top: 10em;
   padding: 2rem;
 }
 
@@ -351,6 +372,7 @@ button {
   border: none;
   opacity: 80%;
   font-size: 15px;
+  padding: ;
 }
 
 button:hover {
@@ -361,3 +383,7 @@ button:hover {
   width: 350px;
   height: 20px;
 }
+
+
+
+#form_container {}
