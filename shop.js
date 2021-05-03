@@ -17,6 +17,7 @@ function showProducts(products) {
   const template = document.querySelector("#bag_template").content;
   products.forEach((product) => {
     const copy = template.cloneNode(true);
+    copy.querySelector("a").href += `?id=${product._id}`;
     copy.querySelector(".img_wrapper a img").src = `${product.image}`;
     copy.querySelector("h2.bag_title").textContent = product.name;
     copy.querySelector("p span").textContent = product.price;

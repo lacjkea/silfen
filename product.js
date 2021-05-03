@@ -1,32 +1,43 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
-
 const url = "https://kea21-ed2b.restdb.io/rest/bags/" + id;
-
-fetch(url)
+console.log(url);
+fetch("https://kea21-ed2b.restdb.io/rest/bags/60868b9da1b4dd2000003ba2", {
+  method: "GET",
+  headers: {
+    "x-apikey": "606d5e92f553500431007501",
+  },
+})
   .then((res) => res.json())
-  .then((data) => showProduct(data));
+  .then((response) => {
+    console.log(response);
+    showSingleProduct(response);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
-function showProduct(product) {
+function showSingleProduct(product) {
   console.log(product);
-  document.querySelector(".breadcrumbs .season").textContent = product.season;
-  document.querySelector(".breadcrumbs .productname").textContent =
-    product.productdisplayname;
-
-  document.querySelector(
-    ".gallery img"
-  ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
-  document.querySelector("img.productimage").alt = product.productdisplayname;
+  // const template = document.querySelector("#product_template").content;
+  // products.forEach((product) => {
+  //   const copy = template.cloneNode(true);
+  document.querySelector(".gallery img").src = `${product.image}`;
+  document.querySelector("h1").textContent = product.name;
+  document.querySelector("h2").textContent = product.price;
+  document.querySelector("p").textContent = product.description;
+  //   const parent = document.querySelector(".products");
+  //   parent.appendChild(copy);
+  // });
 }
-
-<template class="product_template">
+/* <template class="product_template">
   <div class="gallery">
     <img src="" />
   </div>
 
   <h1>TITLE</h1>
   <h2>PRICE</h2>
-  <h2>COLOR</h2>
+
   <div class="color_wrapper">
     <div class="color_circle one"></div>
     <div class="color_circle two"></div>
@@ -41,4 +52,4 @@ function showProduct(product) {
   </button>
 
   <p>Description</p>
-</template>;
+</template>; */

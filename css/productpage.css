@@ -139,22 +139,11 @@ main {
   flex-wrap: wrap;
 }
 
-div.gallery img {
-  max-width: 4000px;
+.gallery img {
+  width: 100%;
 }
 
-div.gallery {
-  max-width: 800px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 20px;
-}
-
-aside {
-  margin-left: 70px;
-}
-
-aside h1 {
+h1 {
   font-family: manrope;
   font-weight: bold;
   font-size: 30px;
@@ -162,7 +151,7 @@ aside h1 {
   padding-bottom: 20px;
 }
 
-aside h2 {
+h2 {
   font-family: manrope;
   letter-spacing: 1px;
   font-size: 15px;
@@ -196,12 +185,6 @@ div.two {
 div.three {
   background-color: brown;
   margin-right: 10px;
-}
-
-aside p {
-  font-family: manrope;
-  letter-spacing: 1px;
-  font-size: 15px;
 }
 
 button {
