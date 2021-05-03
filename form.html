@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script
+      src="https://kit.fontawesome.com/a3d19315f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html"
+          ><img class="logo" src="images/SILFEN-LOGO.png" alt="logo"
+        /></a>
+        <ul class="nav_links">
+          <li>
+            <a href="shop.html">Shop</a>
+            <ul>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Sale</a></li>
+              <li><a href="#">Collection</a></li>
+              <li><a href="#">Bumbags</a></li>
+              <li><a href="#">Crossbody Bags</a></li>
+              <li><a href="#">Wallets</a></li>
+              <li><a href="#">Mini Bags</a></li>
+              <li><a href="#">Sholder Bags</a></li>
+              <li><a href="#">Tote Bags</a></li>
+              <li><a href="#">Care</a></li>
+              <img class="navimg" src="images/Group 17.png" />
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+      </nav>
+      <div class="links">
+        <a class="sociallink" href="#"> <i class="fas fa-search"></i></a>
+        <a class="socialig" href="#">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </div>
+    </header>
+
+    <div id="form_container">
+      <form name="silfen_signup" method="POST">
+        <input type="hidden" name="form-name" value="memover_signup" />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" />
+        <label class="phoneNumber" for="number">Phone number:</label>
+        <input type="tel" id="number" name="number" />
+        <button type="submit">GET THE NEWSLETTER</button>
+      </form>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footerHeading1">
+          <h2>SUPPORT</h2>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+        <div class="footerHeading2">
+          <h2>FOLLOW US</h2>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Pinterest</a>
+          <a href="#">Linkedin</a>
+        </div>
+        <div class="newsletterForm">
+          <h2>JOIN OUR NEWSLETTER</h2>
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            id="footer-email"
+          />
+          <input type="submit" value="Sign up" id="footer-email-btn" />
+        </div>
+      </div>
+      <div class="copyrights">
+        <p class="copyrights_text">
+          © Copyright - Silfen - Klareboderne 10, 1, DK-1115 København - Phone:
+          +45 20 51 89 23 - E-mail: info@silfenstudio.com - CVR. 40912320
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
