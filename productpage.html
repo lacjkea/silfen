@@ -23,16 +23,11 @@
   </head>
   <body>
     <main>
-      <div class="gallery">
-        <img src="silfenproducts/kim.jpg" />
-        <img src="silfenproducts/ulla-recycled.jpg" />
-        <img src="silfenproducts/siri-recycled.jpg" />
-        <img src="silfenproducts/saga-tote.jpg" />
-        <img src="silfenproducts/ida-leather.jpg" />
-        <img src="silfenproducts/ida-nylon.jpg" />
-      </div>
+      <template class="product_template">
+        <div class="gallery">
+          <img src="" />
+        </div>
 
-      <aside>
         <h1>TITLE</h1>
         <h2>PRICE</h2>
         <h2>COLOR</h2>
@@ -46,7 +41,7 @@
         <button type="button" id="add_to_cart">Add to Cart</button>
 
         <p>Description</p>
-      </aside>
+      </template>
 
       <section class="suggestions">
         <h3>You might also like</h3>
@@ -111,5 +106,7 @@
         </div>
       </section>
     </main>
+
+    <script src="product.js"></script>
   </body>
 </html>
