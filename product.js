@@ -30,26 +30,3 @@ function showSingleProduct(product) {
   //   parent.appendChild(copy);
   // });
 }
-/* <template class="product_template">
-  <div class="gallery">
-    <img src="" />
-  </div>
-
-  <h1>TITLE</h1>
-  <h2>PRICE</h2>
-
-  <div class="color_wrapper">
-    <div class="color_circle one"></div>
-    <div class="color_circle two"></div>
-    <div class="color_circle three"></div>
-  </div>
-
-  <button type="button" id="buy_now">
-    Buy Now
-  </button>
-  <button type="button" id="add_to_cart">
-    Add to Cart
-  </button>
-
-  <p>Description</p>
-</template>; */
